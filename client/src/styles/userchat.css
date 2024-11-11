@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Great+Vibes&display=swap');
+:root 
+{
+    --mainBackground: #091921;
+    --primaryFont: 'Great Vibes' , cursive;
+    --secondaryFont: "Comic Neue", cursive;
+}
+.flexdiv{
+    display: flex;
+    width: 100%;
+    background: #222;
+    height: 80px;
+    width: 200px;
+    border-radius: 12px;
+    gap: 18px;
+    color: #eee;
+}
+.myDiv{
+    height: 100%;
+    border-radius: 50%;
+
+}
+.myDiv img{
+    height: 70%;
+    margin: 15%;
+}
+.text-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+.name{
+    margin-top: 20px;
+    font-size: 23px;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: var(--primaryFont);
+}
+.date{
+    text-align: end;
+    margin-right:10px ;
+}

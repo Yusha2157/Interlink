@@ -10,6 +10,8 @@ import { TbChartGridDots } from "react-icons/tb";
 import { IoIosArrowForward , IoIosNotificationsOutline } from "react-icons/io";
 import { IoLogOutOutline , IoLogInOutline  } from "react-icons/io5";
 import { CiLight } from "react-icons/ci";
+import { CiChat1 } from "react-icons/ci";
+
 import ProfilePic from "../assets/profilePic.jpeg";
 import { AuthContext } from '../context/AuthContext';
 import { Link } from 'react-router-dom';
@@ -79,11 +81,11 @@ const Sidebar = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="Content-feed" className='tooltip'>
-                        <TfiLayoutMediaRightAlt />
-                        <span className='link hide'>Content feed</span>
-                        <span className='tooltip_content'>Content feed</span>
-                    </a>
+                    <Link to={"/chat"} className='tooltip'>
+                        <CiChat1/>
+                        <span className='link hide'>Chat</span>
+                        <span className='tooltip_content'>Chat</span>
+                    </Link>
                 </li>
                 <li>
                     <a href="Friends" className='tooltip'>
@@ -150,7 +152,7 @@ const Sidebar = () => {
                             <Link to={"/login"}>Login / Sign Up</Link>
                         </div>
                     </section>
-                    <a className="logout">
+                    <a className="login">
                         <IoLogInOutline /> 
                     </a>
                 </div>

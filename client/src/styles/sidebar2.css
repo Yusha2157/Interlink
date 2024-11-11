@@ -1,5 +1,5 @@
 body{
-    background: #fff;
+    background: #000;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
     overflow: hidden;
@@ -18,18 +18,19 @@ html{
     max-width: 18rem;
     background: #333;
     color: white;
-    width: fit-content;
+    width: 290px;
     border-radius: 12px;
-    height: fit-content;
+    height: 94%;
     /* overflow: hidden; */
     display: flex;
     margin: 1rem 0;
     flex-direction: column;
     transition: max-width 0.1s ease-in-out;
+    z-index: 1;
 }
 body.collapsed .sidebar-container{
     max-width: 5rem;
-    height: 100vh;
+    height: 94%;
     display: flex;
     align-items: center;
 }
@@ -237,7 +238,7 @@ body.collapsed .sidebar-links li{
 
 /* Profile part */
 .user_profile{
-    margin-top: 1rem;
+    margin: 1rem 0 0.6rem 0;
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -267,7 +268,10 @@ body.collapsed .sidebar-links li{
     color: white;
     animation: fadeIn 0.2s ease-in-out;
 }
-
+.user_name a{
+    text-decoration: none;
+    color: inherit;
+}
 .email {
     color: white;
     font-size: 0.8125rem;
@@ -275,12 +279,24 @@ body.collapsed .sidebar-links li{
 }
 
 .logout {
+    font-size: 34px;
     animation: fadeIn 0.2s ease-in-out;
     margin-left: auto;
 }
-
+.login {
+    font-size: 34px;
+    animation: fadeIn 0.2s ease-in-out;
+    margin-left: auto;
+}
 .logout svg {
     color: white;
+}
+.login svg {
+    color: white;
+}
+.login avg:hover{
+    color: #03e9f4;
+    cursor: pointer;
 }
 .logout svg:hover{
     color: #03e9f4;

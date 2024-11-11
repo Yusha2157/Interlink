@@ -3,6 +3,7 @@ import { useFetchRecipientUser } from '../../hooks/useFetchRecipient'
 import avatar from "../../assets/avatar.svg"
 import ChatBox from './ChatBox';
 import { ChatContext } from '../../context/ChatContext';
+import "../../styles/userchat.css"
 
 export default function UserChat({chat , user}) {
 
@@ -15,18 +16,14 @@ export default function UserChat({chat , user}) {
     <>
       <div className="flexdiv" >
         <div className="myDiv">
-            <img src={avatar} alt = "user" height={"45px"} />
+            <img src={avatar} alt = "user"/>
         </div>
         <div className="text-content">
-            <div className="name">{recipientUser?.name} <span>{isOnline ? "on" : "off"}</span></div>
-            <div className="text">Text Message</div>
+            <div className="name">{recipientUser?.name}</div>
+            <div className="date">
+            date
         </div>
-      </div>
-      <div className="dateFlex">
-        <div className="date">
-            12/12/2022
         </div>
-        <div className="notifications">2</div>
       </div>
     </>
   )

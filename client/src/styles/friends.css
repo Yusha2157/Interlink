@@ -1,0 +1,39 @@
+.link_head{
+    margin-bottom: 15px;
+    font-size: 26px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+.LinkSuggestion{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 30px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-bottom: 1px solid #222;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.LinkSuggestion:hover{
+    cursor: pointer;
+}
+.LinkSuggestion .link_avatar img{
+    border-radius: 50%;
+    border: 0.3px solid #222;
+}
+.status{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: grey;
+    position: relative;
+    left: 40px;
+    bottom: 18px;
+}
+.isOnline{
+    background: green;
+}

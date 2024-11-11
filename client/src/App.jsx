@@ -6,7 +6,8 @@ import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
 import { ChatContextProvider } from "./context/ChatContext";
 import Sidebar from "./components/sidebar";
-;
+import Main from "./pages/Main";
+
 
 
 function App() {
@@ -19,10 +20,11 @@ function App() {
         <Sidebar />
         <div className="mainContainer">
             <Routes>
-            <Route path="/" element = {user ?<Chat /> : <Login/>} />
+            <Route path="/" element = {user ?<Main /> : <Login/>} />
             <Route path="*" element = {<Navigate to="/" />} />
-            <Route path="/login" element = {user ? <Chat /> : <Login />} />
-            <Route path="/register" element = {user ? <Chat /> : <Register />} />
+            <Route path="/login" element = {user ? <Main /> : <Login />} />
+            <Route path="/register" element = {user ? <Main /> : <Register />} />
+            <Route path="/chat" element = { user ? <Chat /> : <Login/>}  />
           </Routes>
         </div>
       </ChatContextProvider>

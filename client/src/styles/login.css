@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Great+Vibes&display=swap');
+:root 
+{
+    --mainBackground: #091921;
+    --primaryFont: 'Great Vibes' , cursive;
+    --secondaryFont: "Comic Neue", cursive;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.loginWrapper
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: var(--mainBackground);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.loginWrapper::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#e91e63 , #ffc107);
+    clip-path: circle(12% at 30% 20%);
+}
+.loginWrapper::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#fff , #da00ff);
+    clip-path: circle(14% at 70% 90%);
+}
+.secTion
+{
+    height:500px;
+    width:64.5%;
+    z-index: 10;
+    border-radius: 16px;
+}
+.container
+{
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    border-radius: 16px;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(84, 84, 84, 0.2) , 
+                0 0 10px rgba(84, 84, 84, 0.3) ,
+                0 0 30px rgba(84, 84, 84, 0.6) ,
+                0 0 60px rgba(84, 84, 84, 0.6);
+}
+.loginForm
+{
+    width: 57%;
+    height: 100%;
+}
+.sideContainer
+{
+    border-radius: 16px;
+    overflow: hidden; 
+    /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) , 
+                0 0 10px rgba(0, 0, 0, 0.3) ,
+                0 0 15px rgba(0, 0, 0, 0.3) ,
+                0 0 20px rgba(0, 0, 0, 0.3); */
+ }
+.sideContainer img
+{
+    height: 100%;
+    width: auto;   
+    position: relative;
+    right: -55px;
+}
+.loginForm h1
+{
+    padding: 10px 15px;
+    font-size: 24px;
+    font-family: var(--primaryFont);
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+.loginForm h1 span
+{
+    transition: 2s;
+}
+.loginForm h1 span:hover
+{
+    cursor: grab;
+    text-shadow: 0 0 5px #d549ee71 , 
+                0 0 10px #d549ee71 ,
+                0 0 15px #d549ee71 ,
+                0 0 20px #d549ee71;
+    transition: 0s;
+}
+.loginForm h3
+{
+    font-family: var(--secondaryFont);
+    padding: 10px 15px 0;
+}
+.loginForm .loginHead
+{
+    font-family: var(--secondaryFont);
+    text-align: left;
+}
+.form1
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    width: fit-content;
+}
+.form1 label
+{
+    font-family: var(--secondaryFont);
+    color: #333;
+    font-weight: 400;
+}
+
+.form1 input
+{
+    height: 40px;
+    width: 400px;
+    font-family: var(--secondaryFont);
+    color: #000;
+    border-radius: 4px;
+    font-size: 20px;
+    border: 1px;
+    padding: 10px;
+    background: #DAFFF7;
+    margin-bottom: 15px;
+}
+.passholder
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.loginForm button
+{
+    position: relative;
+    transform: translate(-50%);
+    left: 37%;
+    margin-top: 15px 0;
+    height: 34px;
+    width: 124px;
+    border-radius: 6px;
+    border: 2px;
+    color: white;
+    background: #da00ff;
+    font-family: var(--secondaryFont);
+    font-size: 18px;
+    font-weight: 400;
+}
+.socialHeader
+{
+    position: relative;
+    width: fit-content;
+    transform: translateX(-50%);
+    left: 37%;
+    margin: 10px;
+    font-family: var(--secondaryFont);
+    font-style: italic;
+    color: #333;
+}
+.socialLogos
+{
+    position: relative;
+    width: 400px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.socialLogos svg
+{
+    color: #e91e63;
+    font-size: 34px;
+    transition: transform .4s ease-in;
+}
+.socialLogos svg:hover
+{
+    color: #ffc107;
+    cursor: pointer;
+    transform: rotate(-30deg);
+    transform: scale(1.2) rotateX('35deg');
+}
+.signUpP
+{
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
+    font-family: var(--secondaryFont);
+    color: #333;
+}
+.signUpP span
+{
+    font-family: var(--primaryFont);
+    color: #ffc107;
+    font-size:22px;
+}
+.signUpP span:hover
+{
+    color: #e91e63;
+    cursor: pointer;
+}
+.signUpP span a
+{
+    text-decoration: none;
+    color: #ffc107;
+}
+.signUpP span a:hover
+{
+    color: #e91e63;
+    cursor: pointer;
+}
+.passholder p
+{
+    color: #222;
+    font-family: var(--secondaryFont);
+    cursor: pointer;
+}
+.passholder p:hover
+{
+    text-decoration: underline;
+    color: #333;
+}
